@@ -1,0 +1,120 @@
+.primary-btn {
+    height: 2.5rem;
+    color: $white;
+    background-color: $hng;
+    padding: 0 $sm-spacer;
+    border: none;
+    border-radius: 0.25rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $hng;
+        background-color: $white;
+        border: 2px solid rgba($hng, 1);
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+}
+
+.secondary-btn {
+    height: 2.5rem;
+    background-color: transparent;
+    padding: 0 $sm-spacer;
+    border: 0.125rem solid rgba($hng, 1);
+    border-radius: 0.25rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+    cursor: pointer;
+
+    a {
+        font-weight: 600;
+        color: $hng;
+        text-decoration: none;
+    }
+}
+
+.play-btn {
+    height: 2.5rem;
+    color: $white;
+    background-color: $smoke;
+    background-image: url(/assets/icon-play.svg);
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    background-position: 1rem center;
+    padding: 0 1rem 0 2.5rem;
+    margin-left: $sm-spacer;
+    border: 0.125rem solid rgba($hng, 1);
+    border-radius: 0.25rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+    cursor: pointer;
+
+    &:hover {
+        background-image: url(/assets/icon-play-filled.svg);
+    }
+
+    a {
+        font-weight: 600;
+        color: $hng;
+        text-decoration: none;
+    }
+}
+
+.gradient-btn {
+    height: 2.5rem;
+    color: $white;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, $hng, #F8C51C);
+    background-size: 200% 200%;
+    padding: 0 $sm-spacer;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background: linear-gradient(45deg, $hng, #F8C51C);
+        background-size: 200% 200%;
+        -webkit-animation: flame 4s ease infinite;
+        animation: flame 4s ease infinite;
+
+        @-webkit-keyframes flame {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes flame {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+    }
+}

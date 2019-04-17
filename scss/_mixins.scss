@@ -1,0 +1,62 @@
+//MIXINS
+
+//Breakpoints
+
+$small: 36em;
+$medium: 48em;
+$large: 64em;
+$extra-large: 75em;
+
+@mixin small {
+    @media (min-width: #{$small}) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (min-width: #{$medium}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: #{$large}) {
+        @content;
+    }
+}
+
+@mixin extra-large {
+    @media (min-width: #{$extra-large}) {
+        @content;
+    }
+}
+
+//Colors
+
+//Base________________
+
+$white: rgba(255, 255, 255, 1);
+$smoke: rgba(245, 245, 245, 1);
+$black: rgba(51, 51, 51, 1);
+$tuatara-1: rgba(68, 68, 68, 1);
+$tuatara-4: rgba(180, 180, 180, 1);
+
+//Brands________________
+
+$hng: rgba(225, 117, 55, 1);
+$maj: rgba(57, 99, 115, 1);
+
+//Forms________________
+
+$carnation-red: rgba(245, 75, 94, 1);
+$lightning-yellow: rgba(248, 197, 28, 1);
+$picton-blue: rgba(85, 172, 238, 1);
+$shamrock-green: rgba(72, 210, 160, 1);
+
+//Spacers
+
+$xs-spacer: 8px;
+$sm-spacer: 16px;
+$md-spacer: 32px;
+$lg-spacer: 64px;
+$xl-spacer: 128px;

@@ -1,0 +1,10 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    width: $lg-spacer;
+    height: $lg-spacer;
+    margin: auto;
+    background-color: #222;
+}

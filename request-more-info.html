@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <!-- Define Viewport — Ensures No Horizontal Scroll -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Page Name -->
+    <title>Request More Details</title>
+
+    <!-- Style Sheets and Content Deleivery Networks -->
+
+    <!-- Normalize — Browser Reset -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Fullpage -->
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+    <!-- End Style Sheets and Content Deleivery Networks -->
+
+</head>
+
+<body>
+
+    <!-- Page Content -->
+
+    <div class="nav-bar">
+
+            <div class="logo">
+    
+                <a href="index.html"><img src="/assets/logo-hng.svg" alt="Heat & Glo"></a>
+    
+            </div>
+    
+            <div class="links">
+    
+                <h5>Heat & Glo — No One Builds a Better Fire</h5>
+    
+                <!-- <a href="index.html" class="focus">
+                    <h6>Gas Fireplace Inserts</h6>
+                </a> -->
+    
+                <!-- <a href="send-free-guide.html">
+                    <h6>Send Free Guide</h6>
+                </a> -->
+    
+            </div>
+    
+            <button class="gradient-btn"> <a href="request-more-info.html">Button Label</a></button>
+    
+        </div>
+
+    <div id="fullpage">
+
+        <div class="content">
+
+            <div class="request-more-info section">
+
+                <div class="intro">
+
+                    <div class="copy">
+
+                        <h1>Send My Free Guide to Gas Fireplace Inserts</h1>
+                        <p>Get our guide and find out how a gas fireplace insert installed in place of your wood-burning fireplace will take your room from outdated and drafty to beautiful and warm.</p>
+                        <form action="/dealer-results.html" id="support-form">
+
+                            <div class="div">
+                                <input type="text" class="validation" id="name" name="name" placeholder=" ">
+                                <label for="name">Name</label>
+                            </div>
+
+                            <div class="div">
+                                <input type="email" class="validation" id="email" name="email" placeholder=" ">
+                                <label for="email">Email (Required)</label>
+                                <div class="requirements">Must be a valid email address.</div>
+                            </div>
+
+                            <div class="div">
+                                <input type="text" class="validation" id="tel" name="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                                    placeholder=" ">
+                                <label for="tel">Phone Number (Required)</label>
+                                <div class="requirements">Must be a valid phone number.</div>
+                            </div>
+
+                            <div class="div">
+                                <input type="text" class="validation" id="zip" name="zip" pattern="[0-9]{5}"
+                                    placeholder=" ">
+                                <label for="zip">Zip Code (Required)</label>
+                                <div class="requirements">Must be a valid zip code.</div>
+                            </div>
+                            <input type="submit" value="Send My Free Guide" class="gradient-btn">
+
+                        </form>
+
+                    </div>
+
+                    <div class="image-grid">
+
+                        <img src="/assets/img-01.jpg" alt="Fireplace after remodel" class="img-02" width="100%">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- End Page Content -->
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/fileName.js"></script>
+
+    <!-- WOW JS -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Fullpage JS -->
+    <script type="text/javascript" src="js/fullpage.js"></script>
+
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true,
+            // navigation: true,
+            scrollBar: true,
+            loopBottom: true,
+        });
+
+        //methods
+        // fullpage_api.setAllowScrolling(false);
+    </script>
+
+    <!-- End JavaScript -->
+
+</body>
+
+</html>

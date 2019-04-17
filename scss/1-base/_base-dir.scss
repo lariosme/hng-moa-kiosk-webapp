@@ -1,0 +1,159 @@
+//BASE DIRECTORY
+
+// *Note* Import Partial Classes within this folder by adding @import followed by "file path"; in order to send to app.scss file
+
+//@import "base/fileName";
+
+
+//Body
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    background-color: $smoke;
+    color: rgba(68, 68, 68, 1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+//Typography
+
+h1 {
+    font-size: 1.875rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: $md-spacer;
+
+    @include medium {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    @include large {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+h2 {
+    font-size: 1.625rem;
+    line-height: 2rem;
+    font-weight: 400;
+
+    @include medium {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    @include large {
+        font-size: 2.375rem;
+        line-height: 2.875rem;
+    }
+}
+
+h3 {
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+
+    @include medium {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    @include large {
+        font-size: 2.125rem;
+        line-height: 2.5rem;
+    }
+}
+
+h4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+
+    // @include medium {
+    //     font-size: 1.5rem;
+    //     line-height: 2rem;
+    // }
+
+    // @include large {
+    //     font-size: 1.875rem;
+    //     line-height: 2.5rem;
+    // }
+}
+
+h5 {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.02rem;
+    margin-bottom: $md-spacer;
+}
+
+.lead {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.0225rem;
+}
+
+.small {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.0175rem;
+}
+
+.micro {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: -0.015rem;
+}
+
+.display {
+    font-size: 3.75rem;
+    line-height: 5rem;
+    font-weight: 600;
+    color: $hng;
+    
+    // background: -webkit-linear-gradient(-225deg, #F8C51C, #E27839,);
+    // -webkit-background-clip: text;
+    //         background-clip: text;
+    // -webkit-text-fill-color: transparent;
+}
+
+.quote {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.tab {
+    margin-left: 1rem;
+   }

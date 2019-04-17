@@ -1,0 +1,195 @@
+//-------------------------------- Modal Window: Open --------------------------------//
+
+.modal-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(34, 34, 34, .8);
+  top: 4rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+
+  &:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .card {
+    margin: auto;
+    width: 32rem;
+    position: absolute;
+    background: $white;
+    border-radius: 0.25rem;
+
+    .row-top {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 2rem 0 2rem;
+
+      h5 {
+        max-width: 90%;
+        margin-bottom: 1rem;
+      }
+
+      span {
+        color: $hng;
+      }
+    }
+
+    .row-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 2rem 2rem 2rem;
+
+      p {
+        max-width: 90%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .distance {
+        align-self: flex-end;
+      }
+    }
+
+    .card-alt {
+      display: flex;
+      justify-content: space-between;
+      background-color: $smoke;
+    }
+  }
+}
+
+//-------------------------------- Modal Window: Close --------------------------------//
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+
+  &:hover {
+    color: black;
+  }
+}
+
+//-------------------------------- Tabs --------------------------------//
+
+@media (min-width: 0px) {
+  .panel {
+    order: 99;
+  }
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+// Non-selected tabs
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  height: 5.5rem;
+  margin: 2rem 1rem;
+  background-color: $white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+
+  // Alternate icons
+
+  .shown {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+// On-hover styles
+
+.label:hover {}
+
+// Active styles (clicked)
+
+.label:active {
+  background: $smoke;
+}
+
+// Radio styles
+
+.input {
+  position: absolute;
+  opacity: 0;
+}
+
+// Radio label position
+
+.input:focus+.label {
+  z-index: 1;
+}
+
+// Selected tab
+
+.input:checked+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  height: 5.5rem;
+  margin: 2rem 1rem;
+  background-color: $white;
+  box-shadow: inset 0px 0px 0px 2px $hng;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  // Alternate icons
+
+  .shown {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+}
+
+// Tabs container
+
+.panel {
+  display: none;
+  background: #fff;
+}
+
+// Content to be displayed when radio (tab) is selected
+
+.input:checked+.label+.panel {
+  display: block;
+}
+
+#share-form {
+  width: 28rem;
+  padding: 32px;
+  input {
+      width: 100%;
+  }
+}

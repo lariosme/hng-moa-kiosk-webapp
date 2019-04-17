@@ -1,0 +1,11 @@
+//MODULES DIRECTORY
+
+// *Note* Import Partial Classes within this folder by adding @import followed by "file path"; in order to send to app.scss file
+
+//@import "modules/fileName";
+
+@import "nav-bar";
+@import "logo";
+@import "image-grid";
+@import "forms";
+@import "modal";

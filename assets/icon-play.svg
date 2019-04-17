@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Play</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8,1 C11.8598,1 15,4.1402 15,8 C15,11.8598 11.8598,15 8,15 C4.1402,15 1,11.8598 1,8 C1,4.1402 4.1402,1 8,1 Z M8,0 C3.582,0 0,3.582 0,8 C0,12.418 3.582,16 8,16 C12.418,16 16,12.418 16,8 C16,3.582 12.418,0 8,0 Z M6,4 L6,12 L12,8 L6,4 Z M7,5.86851709 L10.1972244,8 L7,10.1314829 L7,5.86851709 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Play" fill="#E27839" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

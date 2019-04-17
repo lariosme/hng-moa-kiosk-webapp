@@ -1,0 +1,18 @@
+//IMPORT ALL SASS DIRECTORY FILES
+
+// Import Global Variables
+
+@import "variables";
+
+//Import Global Mixins
+
+@import "mixins";
+
+// Imported Directories
+
+@import "1-base/base-dir";
+@import "2-layouts/layouts-dir";
+@import "3-components/components-dir";
+@import "4-modules/modules-dir";
+
+// Additional Sass Below

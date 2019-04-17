@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8,15 C11.8659932,15 15,11.8659932 15,8 C15,4.13400675 11.8659932,1 8,1 C4.13400675,1 1,4.13400675 1,8 C1,11.8659932 4.13400675,15 8,15 Z M8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 Z M6.47487373,11.131728 L4.35355339,9.01040764 C4.15829124,8.81514549 4.15829124,8.498563 4.35355339,8.30330086 C4.54881554,8.10803871 4.86539803,8.10803871 5.06066017,8.30330086 L6.82842712,10.0710678 L11.4246212,5.47487373 C11.6198833,5.27961159 11.9364658,5.27961159 12.131728,5.47487373 C12.3269901,5.67013588 12.3269901,5.98671837 12.131728,6.18198052 L7.18198052,11.131728 C6.98671837,11.3269901 6.67013588,11.3269901 6.47487373,11.131728 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Forms-/-Input-/-Success" transform="translate(-523.000000, -12.000000)">
+            <g id="Input">
+                <g id="Icons-/-Utility-/-Small-/-Check" transform="translate(523.000000, 12.000000)">
+                    <g id="Icon">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Check" fill="#B4B4B4" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Colors-/-Shamrock-/-1" mask="url(#mask-2)" fill="#48D2A0">
+                            <rect id="Swatch" x="0" y="0" width="16" height="16"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

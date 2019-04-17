@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="140px" viewBox="0 0 128 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="91.7959184%" y1="0%" x2="8.20408163%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F8C51C" offset="0%"></stop>
+            <stop stop-color="#E27839" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Whiteboard-Sesh---03.07.19" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="110_Home" transform="translate(-187.000000, -225.000000)" fill="url(#linearGradient-1)">
+            <g id="Content" transform="translate(64.000000, 64.000000)">
+                <g id="Copy" transform="translate(64.000000, 161.000000)">
+                    <path d="M187,35.385 L187,105.764167 L122.997091,140 L59,105.764167 L59,35 L122.997091,0 L187,35.385 Z M64.8179174,102.264167 L120.088132,131.833333 L120.088132,70.175 L64.8179174,41.3233333 L64.8179174,102.264167 Z M181.182083,41.6675 L125.90605,70.1866667 L125.90605,131.833333 L181.182083,102.264167 L181.182083,41.6675 L181.182083,41.6675 Z M149.067179,51.6775 L93.5991546,22.7208333 L68.297032,36.5633333 L123.008727,65.1233333 L149.067179,51.6775 Z M99.7545112,19.355 L155.402891,48.405 L177.69715,36.9016667 L122.979637,6.65583333 L99.7545112,19.355 L99.7545112,19.355 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

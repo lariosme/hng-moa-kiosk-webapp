@@ -5,6 +5,7 @@
     .make-the-switch {
         display: flex;
         height: 100vh;
+        position: relative;
 
         .intro {
             display: flex;
@@ -31,6 +32,18 @@
                 span {
                     color: $hng;
                 }
+            }
+        }
+
+        .down-caret {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 92%;
+
+            h6 {
+                margin-top: 16px;
+                color: rgba(68, 68, 68, .4);
             }
         }
     }
@@ -86,9 +99,7 @@
         }
     }
 
-    .home-owner-quote-01,
-    .home-owner-quote-02,
-    .home-owner-quote-03 {
+    .home-owner-quote {
         display: flex;
 
         .intro {
@@ -98,7 +109,7 @@
             .copy {
                 display: flex;
                 flex-direction: column;
-                width: 29.375rem;
+                width: 33.375rem;
                 margin-top: $lg-spacer+$lg-spacer;
                 margin-left: 4rem;
 
@@ -128,15 +139,6 @@
         .image-grid {
             align-self: flex-start;
             margin-top: $lg-spacer+$lg-spacer;
-        }
-    }
-
-    .home-owner-quote-02 {
-        margin-left: none;
-        margin-right: $lg-spacer;
-
-        .image-grid {
-            margin-right: 0;
         }
     }
 }

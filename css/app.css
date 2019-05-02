@@ -102,7 +102,7 @@ p {
   color: #e17537; }
 
 .quote {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 3.75rem;
   font-weight: 300;
   font-style: italic; }
@@ -122,7 +122,8 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100vh; }
+    height: 100vh;
+    position: relative; }
     .content .make-the-switch .intro {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -146,6 +147,19 @@ p {
           margin-top: 32px; }
         .content .make-the-switch .intro .copy span {
           color: #e17537; }
+    .content .make-the-switch .down-caret {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      position: absolute;
+      top: 92%; }
+      .content .make-the-switch .down-caret h6 {
+        margin-top: 16px;
+        color: rgba(68, 68, 68, 0.4); }
   .content .whats-a-gas-fireplace-insert {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -197,21 +211,15 @@ p {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-  .content .home-owner-quote-01,
-  .content .home-owner-quote-02,
-  .content .home-owner-quote-03 {
+  .content .home-owner-quote {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .content .home-owner-quote-01 .intro,
-    .content .home-owner-quote-02 .intro,
-    .content .home-owner-quote-03 .intro {
+    .content .home-owner-quote .intro {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .content .home-owner-quote-01 .intro .copy,
-      .content .home-owner-quote-02 .intro .copy,
-      .content .home-owner-quote-03 .intro .copy {
+      .content .home-owner-quote .intro .copy {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -219,44 +227,27 @@ p {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        width: 29.375rem;
+        width: 33.375rem;
         margin-top: 128px;
         margin-left: 4rem; }
-        .content .home-owner-quote-01 .intro .copy h4,
-        .content .home-owner-quote-02 .intro .copy h4,
-        .content .home-owner-quote-03 .intro .copy h4 {
+        .content .home-owner-quote .intro .copy h4 {
           margin-bottom: 32px; }
-        .content .home-owner-quote-01 .intro .copy img,
-        .content .home-owner-quote-02 .intro .copy img,
-        .content .home-owner-quote-03 .intro .copy img {
+        .content .home-owner-quote .intro .copy img {
           -ms-flex-item-align: start;
           align-self: flex-start;
           margin-bottom: 32px; }
-        .content .home-owner-quote-01 .intro .copy img:nth-of-type(2),
-        .content .home-owner-quote-02 .intro .copy img:nth-of-type(2),
-        .content .home-owner-quote-03 .intro .copy img:nth-of-type(2) {
+        .content .home-owner-quote .intro .copy img:nth-of-type(2) {
           -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center; }
-        .content .home-owner-quote-01 .intro .copy p:nth-of-type(2),
-        .content .home-owner-quote-02 .intro .copy p:nth-of-type(2),
-        .content .home-owner-quote-03 .intro .copy p:nth-of-type(2) {
+        .content .home-owner-quote .intro .copy p:nth-of-type(2) {
           margin-bottom: 0; }
-        .content .home-owner-quote-01 .intro .copy span,
-        .content .home-owner-quote-02 .intro .copy span,
-        .content .home-owner-quote-03 .intro .copy span {
+        .content .home-owner-quote .intro .copy span {
           color: #e17537; }
-    .content .home-owner-quote-01 .image-grid,
-    .content .home-owner-quote-02 .image-grid,
-    .content .home-owner-quote-03 .image-grid {
+    .content .home-owner-quote .image-grid {
       -ms-flex-item-align: start;
       align-self: flex-start;
       margin-top: 128px; }
-  .content .home-owner-quote-02 {
-    margin-left: none;
-    margin-right: 64px; }
-    .content .home-owner-quote-02 .image-grid {
-      margin-right: 0; }
 
 .content {
   display: -webkit-box;
@@ -612,6 +603,7 @@ p {
   .make-the-switch .image-grid .img-01,
   .request-more-info .image-grid .img-01 {
     width: 24rem;
+    border-radius: 0.5rem;
     z-index: 1;
     margin-bottom: 64px;
     -ms-grid-column: 1;
@@ -627,6 +619,7 @@ p {
   .make-the-switch .image-grid .img-02,
   .request-more-info .image-grid .img-02 {
     width: 32rem;
+    border-radius: 0.5rem;
     -ms-grid-column: 2;
     grid-column-start: 2;
     -ms-grid-column-span: 2;
@@ -636,8 +629,7 @@ p {
     -ms-grid-row-span: 3;
     grid-row-end: 5; }
 
-.home-owner-quote-01 .image-grid,
-.home-owner-quote-03 .image-grid {
+.home-owner-quote .image-grid {
   display: -ms-grid;
   display: grid;
   margin: 0 64px;
@@ -646,94 +638,40 @@ p {
   grid-template-columns: auto auto auto;
   -ms-grid-rows: auto auto auto auto auto;
   grid-template-rows: auto auto auto auto auto; }
-  .home-owner-quote-01 .image-grid .img-01,
-  .home-owner-quote-03 .image-grid .img-01 {
-    width: 24rem;
-    z-index: 1;
-    margin-bottom: 64px;
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    -ms-grid-column-span: 2;
-    grid-column-end: 3;
-    -ms-grid-row: 3;
-    grid-row-start: 3;
-    -ms-grid-row-span: 2;
-    grid-row-end: 5;
-    -webkit-box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); }
-    .home-owner-quote-01 .image-grid .img-01 .portrait,
-    .home-owner-quote-03 .image-grid .img-01 .portrait {
-      width: 16rem; }
-  .home-owner-quote-01 .image-grid .top,
-  .home-owner-quote-03 .image-grid .top {
-    margin-bottom: 16rem; }
-  .home-owner-quote-01 .image-grid .img-02,
-  .home-owner-quote-03 .image-grid .img-02 {
-    width: 32rem;
-    -ms-grid-column: 2;
-    grid-column-start: 2;
-    -ms-grid-column-span: 2;
-    grid-column-end: 4;
-    -ms-grid-row: 2;
-    grid-row-start: 2;
-    -ms-grid-row-span: 3;
-    grid-row-end: 5; }
-  .home-owner-quote-01 .image-grid .portrait,
-  .home-owner-quote-03 .image-grid .portrait {
-    width: 16rem; }
-  .home-owner-quote-01 .image-grid p,
-  .home-owner-quote-03 .image-grid p {
-    max-width: 24rem;
-    -ms-grid-column: 2;
-    grid-column-start: 2;
-    -ms-grid-column-span: 2;
-    grid-column-end: 4;
-    -ms-grid-row: 5;
-    grid-row-start: 5;
-    margin-left: 4rem;
-    margin-top: 32px; }
-
-.home-owner-quote-02 .image-grid {
-  display: -ms-grid;
-  display: grid;
-  margin: 0 64px;
-  margin-top: 64px;
-  -ms-grid-columns: auto auto auto;
-  grid-template-columns: auto auto auto;
-  -ms-grid-rows: auto auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto; }
-  .home-owner-quote-02 .image-grid .img-01 {
-    width: 24rem;
-    z-index: 1;
-    margin-bottom: 64px;
-    -ms-grid-column: 2;
-    grid-column-start: 2;
-    -ms-grid-column-span: 2;
-    grid-column-end: 4;
-    -ms-grid-row: 3;
-    grid-row-start: 3;
-    -ms-grid-row-span: 2;
-    grid-row-end: 5;
-    -webkit-box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); }
-  .home-owner-quote-02 .image-grid .img-02 {
-    width: 32rem;
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    -ms-grid-column-span: 2;
-    grid-column-end: 3;
-    -ms-grid-row: 2;
-    grid-row-start: 2;
-    -ms-grid-row-span: 3;
-    grid-row-end: 5; }
-  .home-owner-quote-02 .image-grid .portrait {
+  .home-owner-quote .image-grid .img-01 {
     width: 16rem;
-    margin-left: 128px; }
-  .home-owner-quote-02 .image-grid p {
-    max-width: 24rem;
+    border-radius: 0.5rem;
+    z-index: 1;
     -ms-grid-column: 1;
     grid-column-start: 1;
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 3;
+    grid-row-start: 3;
+    -ms-grid-row-span: 2;
+    grid-row-end: 5;
+    -webkit-box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); }
+  .home-owner-quote .image-grid .top {
+    margin-bottom: 26rem; }
+  .home-owner-quote .image-grid .img-02 {
+    width: 32rem;
+    border-radius: 0.5rem;
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-column-span: 2;
+    grid-column-end: 4;
+    -ms-grid-row: 2;
+    grid-row-start: 2;
+    -ms-grid-row-span: 3;
+    grid-row-end: 5; }
+  .home-owner-quote .image-grid .portrait {
+    width: 16rem; }
+  .home-owner-quote .image-grid p {
+    max-width: 24rem;
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    -ms-grid-column-span: 2;
     grid-column-end: 4;
     -ms-grid-row: 5;
     grid-row-start: 5;
@@ -741,6 +679,7 @@ p {
     margin-top: 32px; }
 
 .whats-a-gas-fireplace-insert .img-02 {
+  border-radius: 0.5rem;
   margin-top: 64px;
   width: 32rem; }
 
